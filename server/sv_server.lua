@@ -6,7 +6,7 @@ RegisterNetEvent('qb-hornysburgers:server:makeBaconRoll', function()
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
     Player.Functions.RemoveItem("hb-bacon", 2)
-    Player.Functions.AddItem("hb-baconrolls", 2)
+    Player.Functions.AddItem("hb-baconroll", 2)
 end)
 
 -- Create Breakfast Plate
