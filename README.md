@@ -1,11 +1,11 @@
 # QB-HORNYSBURGERS
-# Join the Discord for support or questions!
-# DISCORD https://discord.gg/tbDe9Zjc4e
+ Join the Discord for support or questions!
+ DISCORD https://discord.gg/tbDe9Zjc4e
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Simple and eazy setup!
-# Drag qb-hornysburgers into your resource folder and ensure qb-hornysburgers
+ Drag qb-hornysburgers into your resource folder and ensure qb-hornysburgers
 
-# Copy and Paste this into your qb-core --> Shared --> items.lua
+ Copy and Paste this into your qb-core --> Shared --> items.lua
 ```
 QBShared.Items = {
 	-- Hornys Burgers
@@ -69,7 +69,7 @@ QBShared.Items = {
 	["hb-carbonated-water"]     	 = {["name"] = "hb-carbonated-water", 			["label"] = "Carbonated Water", 		["weight"] = 100, 		["type"] = "item", 		["image"] = "hb-carbonated-water.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
 }
 ```
-# Copy and paste this into your qb-core --> Shared --> jobs.lua
+Copy and paste this into your qb-core --> Shared --> jobs.lua
 ```
 QBShared.Jobs = {
 ["hornysburger"] = {
@@ -103,5 +103,5 @@ QBShared.Jobs = {
 	},
 }
 ```
-# Next take the images from qb-hornysburgers images folder and put them into your qb-inventory --> html --> images
-# And your done! Enjoy
+ Next take the images from qb-hornysburgers images folder and put them into your qb-inventory --> html --> images
+ And your done! Enjoy
