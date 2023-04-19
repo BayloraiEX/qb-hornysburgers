@@ -912,8 +912,8 @@ RegisterNetEvent('qb-hornysburgers:closemenu', function()
 end)
 
 RegisterNetEvent('qb-hornysburgers:client:cookStation', function()
-    SetEntityCoords(PlayerPedId(), 14.35, -1597.3, 28.65)
-    SetEntityHeading(PlayerPedId(), 321.56)
+    SetEntityCoords(PlayerPedId(), 1252.81, -355.4, 69.08)
+    SetEntityHeading(PlayerPedId(), 254.42)
     exports['qb-menu']:openMenu({
         {
             header = "Cooking Station",
