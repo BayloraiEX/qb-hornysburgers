@@ -10,7 +10,7 @@
 QBShared.Items = {
 	-- Hornys Burgers
 	-- Breakfast Food
-	["hb-baconrolls"] 			    = {["name"] = "hb-baconrolls", 			 	    ["label"] = "Bacon Rolls", 			    ["weight"] = 250, 		["type"] = "item", 		["image"] = "hb-baconroll.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Bacon wrapped around cheese!"},
+	["hb-baconroll"] 			    = {["name"] = "hb-baconroll", 			 	    ["label"] = "Bacon Rolls", 			    ["weight"] = 250, 		["type"] = "item", 		["image"] = "hb-baconroll.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Bacon wrapped around cheese!"},
 	["hb-breakfast"] 			    = {["name"] = "hb-breakfast", 			 	    ["label"] = "Breakfast Plate", 		    ["weight"] = 250, 		["type"] = "item", 		["image"] = "hb-breakfast.png", 	    ["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Freshly Made Eggs"},
 	["hb-eggsbacon"] 			    = {["name"] = "hb-eggsbacon", 			     	["label"] = "Eggs N Bacon With Toast", 	["weight"] = 250, 		["type"] = "item", 		["image"] = "hb-eggsbacon.png", 	    ["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Yummy Bacon N Eggs!"},
 	["hb-eggs-benedict"] 			= {["name"] = "hb-eggs-benedict", 			 	["label"] = "Eggs Benedict", 			["weight"] = 250, 		["type"] = "item", 		["image"] = "hb-eggs-benedict.png", 	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Eggs Benedict"},
