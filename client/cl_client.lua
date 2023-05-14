@@ -10,7 +10,7 @@ CreateThread(function()
     SetBlipColour(HornysBurgers, 70)
     BeginTextCommandSetBlipName("STRING")
     AddTextComponentSubstringPlayerName("HornysBurgers")
-    EndTextCommandSetBlipName(HornysBurgesr)
+    EndTextCommandSetBlipName(HornysBurgers)
 end)
 
 AddEventHandler('onResourceStart', function(resourceName)
