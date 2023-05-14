@@ -10,7 +10,7 @@ Config.Vehicle = 'baller'
 
 HungerFill = {
     -- Breakfast
-    ["hb-baconrolls"] = math.random(45, 65),
+    ["hb-baconroll"] = math.random(45, 65),
     ["hb-breakfast"] = math.random(45, 65),
     ["hb-eggs-benedict"] = math.random(45, 65),
     ["hb-eggsbacon"] = math.random(45, 65),
