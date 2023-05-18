@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Baylorai'
 description 'Hornys Burger job for QBCORE'
-version '1.0'
+version '1.1'
 
 shared_scripts {
     'config.lua'
