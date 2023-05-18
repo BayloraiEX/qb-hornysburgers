@@ -1128,7 +1128,7 @@ RegisterNetEvent('qb-hornysburgers:closemenu', function()
     TriggerEvent("qb-menu:closeMenu")
 end)
 
-RegisterNetEvent('qb-hornysburgerst:client:cookStation', function()
+RegisterNetEvent('qb-hornysburgers:client:cookStation', function()
     SetEntityCoords(PlayerPedId(), 1252.81, -355.4, 69.08)
     SetEntityHeading(PlayerPedId(), 254.42)
     exports['qb-menu']:openMenu({
