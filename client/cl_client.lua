@@ -135,8 +135,24 @@ end)
 RegisterNetEvent("qb-hornysburgers:client:frontTray1", function()
     TriggerEvent("inventory:client:SetCurrentStash", "hornysburgerfoodtray1")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "hornysburgerfoodtray1", {
-        maxweight = 30000,
-        slots = 12,
+        maxweight = 10000,
+        slots = 5,
+    })
+end)
+
+RegisterNetEvent("qb-hornysburgers:client:frontTray2", function()
+    TriggerEvent("inventory:client:SetCurrentStash", "hornysburgerfoodtray2")
+    TriggerServerEvent("inventory:server:OpenInventory", "stash", "hornysburgerfoodtray2", {
+        maxweight = 10000,
+        slots = 5,
+    })
+end)
+
+RegisterNetEvent("qb-hornysburgers:client:frontTray3", function()
+    TriggerEvent("inventory:client:SetCurrentStash", "hornysburgerfoodtray3")
+    TriggerServerEvent("inventory:server:OpenInventory", "stash", "hornysburgerfoodtray3", {
+        maxweight = 10000,
+        slots = 5,
     })
 end)
 
@@ -144,6 +160,14 @@ RegisterNetEvent("qb-hornysburgers:client:jobFridge1", function()
     TriggerEvent("inventory:client:SetCurrentStash", "hornysburgerfridge1")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "hornysburgerfridge1", {
         maxweight = 3000000,
+        slots = 30,
+    })
+end)
+
+RegisterNetEvent("qb-hornysburgers:client:jobHeater1", function()
+    TriggerEvent("inventory:client:SetCurrentStash", "Heater")
+    TriggerServerEvent("inventory:server:OpenInventory", "stash", "Heater", {
+        maxweight = 100000,
         slots = 30,
     })
 end)
