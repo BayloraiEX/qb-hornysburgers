@@ -18,7 +18,7 @@ end)
 -- Register Event for drinking
 RegisterNetEvent('qb-hornysburgers:client:Drink', function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"soda"})
-    QBCore.Functions.Progressbar("drink_something", "Drinking..", 5000, false, true, {
+    QBCore.Functions.Progressbar("drink_something", "Drinking..", 2000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
 		disableMouse = false,
@@ -37,7 +37,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeBaconRoll', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-bacon'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -149,7 +149,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeFrenchToast', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-eggs', 'hb-bread'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -173,10 +173,10 @@ RegisterNetEvent('qb-hornysburgers:client:makeFrenchToast', function()
 end)
 
 -- French Toast With Bacon
-RegisterNetEvent('qb-hornysburgers:client:makeFrenchToastBacon', function()
+RegisterNetEvent('qb-hornysburgerst:client:makeFrenchToastBacon', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-eggs', 'hb-bread', 'hb-bacon'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -204,7 +204,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeHashbrowns', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-potatoes'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -212,7 +212,7 @@ RegisterNetEvent('qb-hornysburgers:client:makeHashbrowns', function()
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
-            TriggerServerEvent("qb-hornysburgers:server:makeHashbrowns")
+            TriggerServerEvent("qb-restaurant:server:makeHashbrowns")
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-potatoes"], "remove", 2)
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-hashbrowns"], "add", 2)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -230,7 +230,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeSausages', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-sausage'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -257,7 +257,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeChickenBurger', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-chicken', 'hb-bun', 'hb-lettuce'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -285,7 +285,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeDBLChickenBurger', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-chicken', 'hb-bun', 'hb-lettuce', 'hb-tomato'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -314,7 +314,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeDBLHornBurger', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-patty-raw', 'hb-bun', 'hb-lettuce', 'hb-tomato', 'hb-cheddar'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -344,7 +344,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeHornBurger', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-patty-raw', 'hb-bun', 'hb-lettuce', 'hb-tomato', 'hb-cheddar'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -374,7 +374,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeHornBurgerBacon', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-patty-raw', 'hb-bun', 'hb-lettuce', 'hb-tomato', 'hb-cheddar', 'hb-bacon'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -432,7 +432,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeHornSandwich', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-bread', 'hb-cheddar', 'hb-lettuce', 'hb-tomato'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -462,7 +462,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeChickenFillets', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-chicken-strips-raw'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -488,7 +488,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeHornstars', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-chicken-strips-raw'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -571,7 +571,7 @@ end)
 RegisterNetEvent('qb-hornysburgers:client:makeHunksHen', function()
 	local ingredients = QBCore.Functions.HasItem({'hb-chicken-strips-raw', 'hb-potatoes'})
     if ingredients then
-        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerEvent('animations:client:EmoteCommandStart', {"bbq"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("taco_stuff", "No problem..", 8000, false, true, {
             disableMovement = true,
@@ -601,16 +601,16 @@ RegisterNetEvent('qb-hornysburgers:client:makeHercules', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 2000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
             TriggerServerEvent("qb-hornysburgers:server:makeHercules")
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-hercules"], "add", 2)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-hercules"], "add", 1)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         end, function() -- Cancel
             QBCore.Functions.Notify("Okay then", "error")
@@ -627,16 +627,16 @@ RegisterNetEvent('qb-hornysburgers:client:makeJunkEnergy', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 2000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
             TriggerServerEvent("qb-hornysburgers:server:makeJunkEnergy")
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-Pepsi"], "add", 2)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-Pepsi"], "add", 1)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         end, function() -- Cancel
             QBCore.Functions.Notify("Okay then", "error")
@@ -653,16 +653,16 @@ RegisterNetEvent('qb-hornysburgers:client:makeOrangTang', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 2000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
             TriggerServerEvent("qb-hornysburgers:server:makeOrangTang")
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-orangotang"], "add", 2)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-orangotang"], "add", 1)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         end, function() -- Cancel
             QBCore.Functions.Notify("Okay then", "error")
@@ -678,17 +678,17 @@ RegisterNetEvent('qb-hornysburgers:client:makePepsi', function()
 	local ingredients = QBCore.Functions.HasItem({"hb-carbonated-water", "hb-sugar-cubes"})
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
-        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.01)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 2000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
             TriggerServerEvent("qb-hornysburgers:server:makePepsi")
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "add", 2)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "add", 1)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         end, function() -- Cancel
             QBCore.Functions.Notify("Okay then", "error")
@@ -705,16 +705,16 @@ RegisterNetEvent('qb-hornysburgers:client:makeRaineWater', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 2000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
             TriggerServerEvent("qb-hornysburgers:server:makeRaineWater")
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-raine"], "add", 2)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-raine"], "add", 1)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         end, function() -- Cancel
             QBCore.Functions.Notify("Okay then", "error")
@@ -731,16 +731,16 @@ RegisterNetEvent('qb-hornysburgers:client:makeSprunk', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 2000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
             TriggerServerEvent("qb-hornysburgers:server:makeSprunk")
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sprunk"], "add", 2)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sugar-cubes"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-sprunk"], "add", 1)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         end, function() -- Cancel
             QBCore.Functions.Notify("Okay then", "error")
@@ -757,15 +757,15 @@ RegisterNetEvent('qb-hornysburgers:client:makeWaterBottle', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 2000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
-            TriggerServerEvent("qb-hornysburgers:server:makeOrangTang")
+            TriggerServerEvent("qb-hornysburgers:server:makeWaterBottle")
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-carbonated-water"], "remove", 1)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-water-bottle"], "add", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["water_bottle"], "add", 1)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         end, function() -- Cancel
             QBCore.Functions.Notify("Okay then", "error")
@@ -783,7 +783,7 @@ RegisterNetEvent('qb-hornysburgers:client:makeCherryFloat', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 3000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
@@ -809,7 +809,7 @@ RegisterNetEvent('qb-hornysburgers:client:makeCherryPopper', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 3000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
@@ -830,18 +830,18 @@ RegisterNetEvent('qb-hornysburgers:client:makeCherryPopper', function()
 end)
 
 -- Ice Cream Cake
-RegisterNetEvent('qb-hornysburgers:client:makeCherryFloat', function()
+RegisterNetEvent('qb-hornysburgers:client:makeIcecreamCake', function()
 	local ingredients = QBCore.Functions.HasItem({"hb-icecream-mix"})
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 3000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
-            TriggerServerEvent("qb-hornysburgers:server:makeCherryFloat")
+            TriggerServerEvent("qb-hornysburgers:server:makeIcecreamCake")
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-icecream-mix"], "remove", 1)
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-icecream-cake"], "add", 1)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
@@ -860,7 +860,7 @@ RegisterNetEvent('qb-hornysburgers:client:makeIcecreamCone', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 3000, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
@@ -885,7 +885,7 @@ RegisterNetEvent('qb-hornysburgers:client:makeIcecreamNuggets', function()
     if ingredients then
         TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "deepfry", 0.02)
-        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 10000, false, true, {
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 3500, false, true, {
             disableMovement = true,
             disableCarMovement = false,
             disableMouse = false,
@@ -904,6 +904,223 @@ RegisterNetEvent('qb-hornysburgers:client:makeIcecreamNuggets', function()
     end
 end)
 
+-- Package Meal Section
+-- Chicken Burger Meal
+RegisterNetEvent('qb-hornysburgers:client:makeChickenBurgerMeal', function()
+	local ingredients = QBCore.Functions.HasItem({"hb-chicken-burger", "hb-chicken-horn-stars", "hb-pepsi"})
+    if ingredients then
+        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "mechanic4", 0.02)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 5000, false, true, {
+            disableMovement = true,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            TriggerServerEvent("qb-hornysburgers:server:makeChickenBurgerMeal")
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-burger"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-burger-meal"], "add", 1)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end, function() -- Cancel
+            QBCore.Functions.Notify("Okay then", "error")
+            TriggerEvent('qb-hornysburgers:client:cooking')
+        end)
+    else		
+        QBCore.Functions.Notify('You missing something.', 'error')
+    end
+end)
+
+-- DBLChicken Burger Meal
+RegisterNetEvent('qb-hornysburgers:client:makeDBLChickenBurgerMeal', function()
+	local ingredients = QBCore.Functions.HasItem({"hb-dblchicken-burger", "hb-chicken-horn-stars", "hb-pepsi"})
+    if ingredients then
+        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "mechanic4", 0.02)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 5000, false, true, {
+            disableMovement = true,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            TriggerServerEvent("qb-hornysburgers:server:makeDBLChickenBurgerMeal")
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-dblchicken-burger"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-dblchicken-burger-meal"], "add", 1)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end, function() -- Cancel
+            QBCore.Functions.Notify("Okay then", "error")
+            TriggerEvent('qb-hornysburgers:client:cooking')
+        end)
+    else		
+        QBCore.Functions.Notify('You missing something.', 'error')
+    end
+end)
+
+-- DBLHorn Burger Meal
+RegisterNetEvent('qb-hornysburgers:client:makeDBLHornBurgerMeal', function()
+	local ingredients = QBCore.Functions.HasItem({"hb-dblhorn-burger", "hb-chicken-horn-stars", "hb-pepsi"})
+    if ingredients then
+        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "mechanic4", 0.02)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 5000, false, true, {
+            disableMovement = true,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            TriggerServerEvent("qb-hornysburgers:server:makeDBLHornBurgerMeal")
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-dblhorn-burger"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-dblhorn-burger-meal"], "add", 1)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end, function() -- Cancel
+            QBCore.Functions.Notify("Okay then", "error")
+            TriggerEvent('qb-hornysburgers:client:cooking')
+        end)
+    else		
+        QBCore.Functions.Notify('You missing something.', 'error')
+    end
+end)
+
+-- Horn Burger Meal
+RegisterNetEvent('qb-hornysburgers:client:makeHornBurgerMeal', function()
+	local ingredients = QBCore.Functions.HasItem({"hb-hornburger", "hb-chicken-horn-stars", "hb-pepsi"})
+    if ingredients then
+        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "mechanic4", 0.02)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 5000, false, true, {
+            disableMovement = true,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            TriggerServerEvent("qb-hornysburgers:server:makeHornBurgerMeal")
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-hornburger"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-horn-burger-meal"], "add", 1)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end, function() -- Cancel
+            QBCore.Functions.Notify("Okay then", "error")
+            TriggerEvent('qb-hornysburgers:client:cooking')
+        end)
+    else		
+        QBCore.Functions.Notify('You missing something.', 'error')
+    end
+end)
+
+-- Bacon Horn Burger Meal
+RegisterNetEvent('qb-hornysburgers:client:makeBaconHornBurgerMeal', function()
+	local ingredients = QBCore.Functions.HasItem({"hb-hornburger-bacon", "hb-chicken-horn-stars", "hb-pepsi"})
+    if ingredients then
+        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "mechanic4", 0.02)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 5000, false, true, {
+            disableMovement = true,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            TriggerServerEvent("qb-hornysburgers:server:makeBaconHornBurgerMeal")
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-hornburger-bacon"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-baconhorn-burger-meal"], "add", 1)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end, function() -- Cancel
+            QBCore.Functions.Notify("Okay then", "error")
+            TriggerEvent('qb-hornysburgers:client:cooking')
+        end)
+    else		
+        QBCore.Functions.Notify('You missing something.', 'error')
+    end
+end)
+
+-- Pickle Horn Burger Meal
+RegisterNetEvent('qb-hornysburgers:client:makePickleHornBurgerMeal', function()
+	local ingredients = QBCore.Functions.HasItem({"hb-hornburger-pickle", "hb-chicken-horn-stars", "hb-pepsi"})
+    if ingredients then
+        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "mechanic4", 0.02)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 5000, false, true, {
+            disableMovement = true,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            TriggerServerEvent("qb-hornysburgers:server:makePickleHornBurgerMeal")
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-hornburger-pickle"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-picklehorn-burger-meal"], "add", 1)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end, function() -- Cancel
+            QBCore.Functions.Notify("Okay then", "error")
+            TriggerEvent('qb-hornysburgers:client:cooking')
+        end)
+    else		
+        QBCore.Functions.Notify('You missing something.', 'error')
+    end
+end)
+
+-- Horn Sandwich Meal
+RegisterNetEvent('qb-hornysburgers:client:makeHornSandwichMeal', function()
+	local ingredients = QBCore.Functions.HasItem({"hb-horn-sandwich", "hb-chicken-horn-stars", "hb-pepsi"})
+    if ingredients then
+        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "mechanic4", 0.02)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 5000, false, true, {
+            disableMovement = true,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            TriggerServerEvent("qb-hornysburgers:server:makeHornSandwichMeal")
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-horn-sandwich"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-horn-sandwich-meal"], "add", 1)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end, function() -- Cancel
+            QBCore.Functions.Notify("Okay then", "error")
+            TriggerEvent('qb-hornysburgers:client:cooking')
+        end)
+    else		
+        QBCore.Functions.Notify('You missing something.', 'error')
+    end
+end)
+
+-- Chicken Sandwich Meal
+RegisterNetEvent('qb-hornysburgers:client:makeChickenSandwichMeal', function()
+	local ingredients = QBCore.Functions.HasItem({"hb-chicken-sandwich", "hb-chicken-horn-stars", "hb-pepsi"})
+    if ingredients then
+        TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+        TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "mechanic4", 0.02)
+        QBCore.Functions.Progressbar("taco_stuff", "No problem..", 5000, false, true, {
+            disableMovement = true,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            TriggerServerEvent("qb-hornysburgers:server:makeChickenSandwichMeal")
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-sandwich"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-pepsi"], "remove", 1)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-sandwich-meal"], "add", 1)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end, function() -- Cancel
+            QBCore.Functions.Notify("Okay then", "error")
+            TriggerEvent('qb-hornysburgers:client:cooking')
+        end)
+    else		
+        QBCore.Functions.Notify('You missing something.', 'error')
+    end
+end)
+
 -- MENUS --     
 
 RegisterNetEvent('qb-hornysburgers:closemenu', function()
@@ -911,12 +1128,12 @@ RegisterNetEvent('qb-hornysburgers:closemenu', function()
     TriggerEvent("qb-menu:closeMenu")
 end)
 
-RegisterNetEvent('qb-hornysburgers:client:cookStation', function()
+RegisterNetEvent('qb-hornysburgerst:client:cookStation', function()
     SetEntityCoords(PlayerPedId(), 1252.81, -355.4, 69.08)
     SetEntityHeading(PlayerPedId(), 254.42)
     exports['qb-menu']:openMenu({
         {
-            header = "Cooking Station",
+            header = "Hornys Cooking Station",
             txt = "",
             isMenuHeader = true
         },
@@ -1013,7 +1230,7 @@ RegisterNetEvent('qb-hornysburgers:client:cookStation', function()
             txt = "Requires:</p>2x Raw Patty | 2x Bun | 2x Lettuce | 2x Tomato | 2x Cheddar",
             icon = "fa-solid fa-burger",
             params = {
-                event = "qb-hornysburgers:client:makeDBLHornBurger",
+                event = "qb-hornysburgers:client:makeHornBurger",
             }
         },
         {
@@ -1045,7 +1262,7 @@ RegisterNetEvent('qb-hornysburgers:client:cookStation', function()
             txt = "Requires:</p>2x Raw Chicken Strips",
             icon = "fa-solid fa-burger",
             params = {
-                event = "qb-hornysburgers:client:makeChickenFillets",
+                event = "qqb-hornysburgers:client:makeChickenFillets",
             }
         },
         {
@@ -1096,13 +1313,13 @@ RegisterNetEvent('qb-hornysburgers:client:drinkStation', function()
     SetEntityHeading(PlayerPedId(), 74.78)
     exports['qb-menu']:openMenu({
         {
-            header = "Drink Station",
+            header = "Hornys Drink Station",
             txt = "",
             isMenuHeader = true
         },
         {
             header = "Hercules",
-            txt = "Requires:</p>2x Carbonated Water | 2x Sugar Cubes",
+            txt = "Requires:</p>1x Carbonated Water | 1x Sugar Cubes",
             icon = "fa-solid fa-mug-hot",
             params = {
                 event = "qb-hornysburgers:client:makeHercules",
@@ -1110,7 +1327,7 @@ RegisterNetEvent('qb-hornysburgers:client:drinkStation', function()
         },
         {
             header = "Junk Energy",
-            txt = "Requires:</p>2x Carbonated Water | 2x Sugar Cubes",
+            txt = "Requires:</p>1x Carbonated Water | 1x Sugar Cubes",
             icon = "fa-solid fa-mug-hot",
             params = {
                 event = "qb-hornysburgers:client:makeJunkEnergy",
@@ -1118,7 +1335,7 @@ RegisterNetEvent('qb-hornysburgers:client:drinkStation', function()
         },
         {
             header = "Orang O Tango",
-            txt = "Requires:</p>2x Carbonated Water | 2x Sugar Cubes",
+            txt = "Requires:</p>1x Carbonated Water | 1x Sugar Cubes",
             icon = "fa-solid fa-mug-hot",
             params = {
                 event = "qb-hornysburgers:client:makeOrangTang",
@@ -1126,7 +1343,7 @@ RegisterNetEvent('qb-hornysburgers:client:drinkStation', function()
         },
         {
             header = "Pepsi",
-            txt = "Requires:</p>2x Carbonated Water | 2x Sugar Cubes",
+            txt = "Requires:</p>1x Carbonated Water | 1x Sugar Cubes",
             icon = "fa-solid fa-mug-hot",
             params = {
                 event = "qb-hornysburgers:client:makePepsi",
@@ -1134,7 +1351,7 @@ RegisterNetEvent('qb-hornysburgers:client:drinkStation', function()
         },
         {
             header = "Raine",
-            txt = "Requires:</p>2x Carbonated Water",
+            txt = "Requires:</p>1x Carbonated Water",
             icon = "fa-solid fa-mug-hot",
             params = {
                 event = "qb-hornysburgers:client:makeRaineWater",
@@ -1142,7 +1359,7 @@ RegisterNetEvent('qb-hornysburgers:client:drinkStation', function()
         },
         {
             header = "Sprunk",
-            txt = "Requires:</p>2x Carbonated Water | 2x Sugar Cubes",
+            txt = "Requires:</p>1x Carbonated Water | 1x Sugar Cubes",
             icon = "fa-solid fa-mug-hot",
             params = {
                 event = "qb-hornysburgers:client:makeSprunk",
@@ -1150,7 +1367,7 @@ RegisterNetEvent('qb-hornysburgers:client:drinkStation', function()
         },
         {
             header = "Water",
-            txt = "Requires:</p>2x Carbonated Water",
+            txt = "Requires:</p>1x Carbonated Water",
             icon = "fa-solid fa-mug-hot",
             params = {
                 event = "qb-hornysburgers:client:makeWaterBottle",
@@ -1194,6 +1411,89 @@ RegisterNetEvent('qb-hornysburgers:client:drinkStation', function()
             icon = "fa-solid fa-mug-hot",
             params = {
                 event = "qb-hornysburgers:client:makeIcecreamNuggets",
+            }
+        },
+        {
+            header = "Exit",
+            icon = "fa-solid fa-angle-left",
+            params = {
+                event = "qb-hornysburgers:closemenu"
+            }
+        },
+    })
+end)
+
+RegisterNetEvent('qb-hornysburgers:client:packageStation', function()
+    SetEntityCoords(PlayerPedId(), 1249.85, -355.04, 69.08)
+    SetEntityHeading(PlayerPedId(), 165.16)
+    exports['qb-menu']:openMenu({
+        {
+            header = "Hornys Package Station",
+            txt = "",
+            isMenuHeader = true
+        },
+        {
+            header = "Chicken Burger Meal",
+            txt = "Requires:</p>1x Chicken Burger | 1x Hornstars | 1x Pepsi",
+            icon = "fa-solid fa-mug-hot",
+            params = {
+                event = "qb-hornysburgers:client:makeChickenBurgerMeal",
+            }
+        },
+        {
+            header = "DBL Chicken Burger Meal",
+            txt = "Requires:</p>1x DBL Chicken Burger | 1x Hornstars | 1x Pepsi",
+            icon = "fa-solid fa-mug-hot",
+            params = {
+                event = "qb-hornysburgers:client:makeDBLChickenBurgerMeal",
+            }
+        },
+        {
+            header = "DBL Horn Burger Meal",
+            txt = "Requires:</p>1x DBL Horn Burger | 1x Hornstars | 1x Pepsi",
+            icon = "fa-solid fa-mug-hot",
+            params = {
+                event = "qb-hornysburgers:client:makeDBLHornBurgerMeal",
+            }
+        },
+        {
+            header = "Horn Burger Meal",
+            txt = "Requires:</p>1x Horn Burger | 1x Hornstars | 1x Pepsi",
+            icon = "fa-solid fa-mug-hot",
+            params = {
+                event = "qb-hornysburgers:client:makeHornBurgerMeal",
+            }
+        },
+        {
+            header = "Bacon Horn Burger Meal",
+            txt = "Requires:</p>1x Bacon Horn Burger | 1x Hornstars | 1x Pepsi",
+            icon = "fa-solid fa-mug-hot",
+            params = {
+                event = "qb-hornysburgers:client:makeBaconHornBurgerMeal",
+            }
+        },
+        {
+            header = "Pickle Horn Burger Meal",
+            txt = "Requires:</p>1x Pickle Horn Burger | 1x Hornstars | 1x Pepsi",
+            icon = "fa-solid fa-mug-hot",
+            params = {
+                event = "qb-hornysburgers:client:makePickleHornBurgerMeal",
+            }
+        },
+        {
+            header = "Horn Sandwich Meal",
+            txt = "Requires:</p>1x Horn Sandwich | 1x Hornstars | 1x Pepsi",
+            icon = "fa-solid fa-mug-hot",
+            params = {
+                event = "qb-hornysburgers:client:makeHornSandwichMeal",
+            }
+        },
+        {
+            header = "Chicken Sandwich Meal",
+            txt = "Requires:</p>1x Chicken Sandwich | 1x Hornstars | 1x Pepsi",
+            icon = "fa-solid fa-mug-hot",
+            params = {
+                event = "qb-hornysburgers:client:makeChickenSandwichMeal",
             }
         },
         {
