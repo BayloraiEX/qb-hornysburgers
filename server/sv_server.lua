@@ -213,7 +213,7 @@ RegisterNetEvent('qb-hornysburgers:server:makeHercules', function()
 end)
 
 -- Create Junk Energy
-RegisterNetEvent('qb-restaurant:server:makeJunkEnergy', function()
+RegisterNetEvent('qb-hornysburgers:server:makeJunkEnergy', function()
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
     Player.Functions.RemoveItem("hb-carbonated-water", 1)
@@ -474,7 +474,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-baconroll", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -482,7 +482,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-breakfast", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -490,7 +490,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-eggsbacon", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -498,7 +498,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-eggs-benedict", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -506,7 +506,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-frenchtoast", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -514,7 +514,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-french-toast-bacon", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -522,7 +522,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-hashbrowns", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -530,7 +530,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-sausages", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -539,7 +539,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-chicken-burger", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -547,7 +547,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-dblchicken-burger", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -555,7 +555,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-dblhorn-burger", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -563,7 +563,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-hornburger", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -571,7 +571,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-hornburger-bacon", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -579,7 +579,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-hornburger-pickle", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -587,7 +587,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-horn-sandwich", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -596,7 +596,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-chicken-fillet", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -604,7 +604,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-chicken-horn-stars", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -612,7 +612,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-chicken-salad", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -620,7 +620,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-chicken-sandwich", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -628,7 +628,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-hunks-o-hen", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -637,7 +637,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-cherry-float", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -645,7 +645,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-cherrypopper", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -653,7 +653,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-icecream-cake", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -661,7 +661,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-icecream-cone", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -669,7 +669,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-icecream-nuggets", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Eat", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
     end
 end)
 
@@ -678,7 +678,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-hercules", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -686,7 +686,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-junk", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -694,7 +694,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-orangotang", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -702,7 +702,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-pepsi", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -710,7 +710,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-raine", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -718,7 +718,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-sprunk", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -726,7 +726,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-water-bottle", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -735,7 +735,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-cherry-float", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -743,7 +743,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-cherrypopper", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -751,7 +751,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-icecream-cake", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -759,7 +759,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-icecream-cone", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -767,7 +767,7 @@ end)
 QBCore.Functions.CreateUseableItem("hb-icecream-nuggets", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
-        TriggerClientEvent("qb-restaurant:client:Drink", source, item.name)
+        TriggerClientEvent("qb-hornysburgers:client:Drink", source, item.name)
     end
 end)
 
@@ -783,7 +783,7 @@ RegisterNetEvent("qb-hornysburgers:server:billPlayer", function(playerId, amount
                 billed.Functions.RemoveMoney('bank', amount)
                 TriggerClientEvent('QBCore:Notify', source, 'You charged a customer.', 'success')
                 TriggerClientEvent('QBCore:Notify', billed.PlayerData.source, 'You have been charged $'..amount..' for your order at Hornys Burger Shop.')
-		exports['qb-management']:AddMoney('hornysburger', amount)
+		        exports['qb-management']:AddMoney('hornysburger', amount)
                 --exports['Renewed-Banking']:addAccountMoney('hornysburger', amount)
                 else
                     TriggerClientEvent('QBCore:Notify', source, 'Must be a valid amount above 0.', 'error')
