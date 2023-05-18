@@ -58,19 +58,27 @@ ThirstFill = {
 }
 
 Config.Zones = {
-    [1] = { coords = vector3(1252.23, -351.43, 69.08), radius = 1.35, icon = "fa-solid fa-box-open", event = "qb-hornysburgers:client:ingredientStore", label = "Ingredients", job = "hornysburger" }, -- Ingredient Store
-    [2] = { coords = vector3(16.2, -1597.67, 29.38), radius = 0.75, icon = "fa-solid fa-briefcase", event = "qb-bossmenu:client:OpenMenu", label = "Manage Business", job = {['hornysburger'] = 4} }, -- Boss menu
-    [3] = { coords = vector3(1249.13, -358.51, 69.08), radius = 0.8, icon = "far fa-clipboard", event = "qb-hornysburgers:client:frontTray1", label = "Tray 1", }, -- Tray #1
-    [4] = { coords = vector3(1246.73, -357.07, 69.08), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "qb-hornysburgers:client:drinkStation", label = "Make Drinks", job = "hornysburger" }, -- Drink Station
-    [5] = { coords = vector3(1252.96, -355.17, 69.08), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "qb-hornysburgers:client:cookStation", label = "Cook Food", job = "hornysburger" }, -- Cook Zone
-    [6] = { coords = vector3(1250.0, -355.12, 69.08), radius = 0.9, icon = "fa-solid fa-square-up-right", event = "qb-hornysburgers:client:jobFridge1", label = "Fridge", job = "honysburger" }, -- Fridge
-    [7] = { coords = vector3(1243.51, -350.27, 69.67), radius = 0.6, icon = "fa-solid fa-clock", event = "qb-hornysburgers:clientToggleDuty", label = "Clock In/Out", job = "hornysburger" }, -- On/Off Duty
-    [8] = { coords = vector3(1248.27, -358.23, 69.08), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "qb-hornysburgers:bill", label = "Bill Customer", job = "hornysburger" }, -- Cash Register #1
+    [1] = { coords = vector3(1252.23, -351.43, 69.08), radius = 1.0, icon = "fa-solid fa-box-open", event = "qb-hornysburgers:client:ingredientStore", label = "Ingredients", job = "hornysburger" }, -- Ingredient Store
+    [2] = { coords = vector3(1238.41, -348.82, 69.08), radius = 0.75, icon = "fa-solid fa-briefcase", event = "qb-bossmenu:client:OpenMenu", label = "Manage Business", job = {['hornysburger'] = 3} }, -- Boss menu
+    [3] = { coords = vector3(1248.78, -358.93, 69.09), radius = 0.4, icon = "far fa-clipboard", event = "qb-hornysburgers:client:frontTray1", label = "Front Tray", }, -- Tray #1
+    [4] = { coords = vector3(1251.38, -359.89, 69.09), radius = 0.4, icon = "far fa-clipboard", event = "qb-hornysburgers:client:frontTray2", label = "Front Tray", }, -- Tray #2
+    [5] = { coords = vector3(1250.07, -359.19, 69.1), radius = 0.4, icon = "far fa-clipboard", event = "qb-hornysburgers:client:frontTray3", label = "Front Tray", }, -- Tray #3
+    [6] = { coords = vector3(1253.1, -358.76, 69.12), radius = 0.4, icon = "far fa-clipboard", event = "qb-hornysburgers:client:frontTray4", label = "Drive-through Tray", }, -- Tray #4
+    [7] = { coords = vector3(1246.73, -357.07, 69.08), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "qb-hornysburgers:client:drinkStation", label = "Make Drinks", job = "hornysburger" }, -- Drink Station
+    [8] = { coords = vector3(1252.96, -355.17, 69.08), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "qb-hornysburgers:client:cookStation", label = "Cook Food", job = "hornysburger" }, -- Cook Zone
+    [9] = { coords = vector3(1250.01, -355.46, 69.08), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "qb-hornysburgers:client:packageStation", label = "Package Items", job = "hornysburger" }, -- Package Zone
+    [10] = { coords = vector3(1248.91, -352.24, 69.08), radius = 1.0, icon = "fa-solid fa-square-up-right", event = "qb-hornysburgers:client:jobFridge1", label = "Fridge", job = "hornysburger" }, -- Fridge
+    [11] = { coords = vector3(1251.97, -356.54, 69.08), radius = 1.0, icon = "fa-solid fa-square-up-right", event = "qb-hornysburgers:client:jobHeater1", label = "Heater", job = "hornysburger" }, -- Heater
+    [12] = { coords = vector3(1243.51, -350.27, 69.67), radius = 0.6, icon = "fa-solid fa-clock", event = "qb-hornysburgers:clientToggleDuty", label = "Clock In/Out", job = "hornysburger" }, -- On/Off Duty
+    [13] = { coords = vector3(1248.27, -358.23, 69.08), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "qb-hornysburgers:bill", label = "Bill Customer", job = "hornysburger" }, -- Cash Register #1
+    [14] = { coords = vector3(1250.81, -359.22, 69.08), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "qb-hornysburgers:bill", label = "Bill Customer", job = "hornysburger" }, -- Cash Register #2
+    [15] = { coords = vector3(1249.39, -359.01, 69.08), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "qb-hornysburgers:bill", label = "Bill Customer", job = "hornysburger" }, -- Cash Register #3
+    [16] = { coords = vector3(1252.83, -357.68, 69.08), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "qb-hornysburgers:bill", label = "Bill Customer", job = "hornysburger" }, -- Cash Register #4
 }
 
 Config.Items = {
 label = "Shop",
-    slots = 9,
+    slots = 20,
     items = {
         [1] = {
             name = "hb-bacon",
