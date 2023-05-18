@@ -156,6 +156,14 @@ RegisterNetEvent("qb-hornysburgers:client:frontTray3", function()
     })
 end)
 
+RegisterNetEvent("qb-hornysburgers:client:frontTray4", function()
+    TriggerEvent("inventory:client:SetCurrentStash", "hornysburgerfoodtray4")
+    TriggerServerEvent("inventory:server:OpenInventory", "stash", "hornysburgerfoodtray4", {
+        maxweight = 10000,
+        slots = 5,
+    })
+end)
+
 RegisterNetEvent("qb-hornysburgers:client:jobFridge1", function()
     TriggerEvent("inventory:client:SetCurrentStash", "hornysburgerfridge1")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "hornysburgerfridge1", {
