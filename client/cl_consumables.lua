@@ -212,7 +212,7 @@ RegisterNetEvent('qb-hornysburgers:client:makeHashbrowns', function()
             disableMouse = false,
             disableCombat = true,
         }, {}, {}, {}, function() -- Done
-            TriggerServerEvent("qb-restaurant:server:makeHashbrowns")
+            TriggerServerEvent("qb-hornysburgers:server:makeHashbrowns")
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-potatoes"], "remove", 2)
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-hashbrowns"], "add", 2)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
