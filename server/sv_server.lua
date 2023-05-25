@@ -601,7 +601,7 @@ QBCore.Functions.CreateUseableItem("hb-chicken-fillet", function(source, item)
 end)
 
 -- Chicken Hornstars
-QBCore.Functions.CreateUseableItem("hb-chicken-horn-stars", function(source, item)
+QBCore.Functions.CreateUseableItem("hb-chicken-hornstars", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.RemoveItem(item.name, 1, item.slot) then
         TriggerClientEvent("qb-hornysburgers:client:Eat", source, item.name)
