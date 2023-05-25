@@ -498,7 +498,7 @@ RegisterNetEvent('qb-hornysburgers:client:makeHornstars', function()
         }, {}, {}, {}, function() -- Done
             TriggerServerEvent("qb-hornysburgers:server:makeHornstars")
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-strips-raw"], "remove", 2)
-            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-horn-stars"], "add", 4)
+            TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hb-chicken-hornstars"], "add", 4)
             TriggerEvent('animations:client:EmoteCommandStart', {"c"})
             TriggerEvent('qb-hornysburgers:client:cooking')
         end, function() -- Cancel
