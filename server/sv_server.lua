@@ -169,7 +169,7 @@ RegisterNetEvent('qb-hornysburgers:server:makeHornstars', function()
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then return end
     Player.Functions.RemoveItem("hb-chicken-strips-raw", 2)
-    Player.Functions.AddItem("hb-chicken-horn-stars", 4)
+    Player.Functions.AddItem("hb-chicken-hornstars", 4)
 end)
 
 -- Create Chicken Salad
