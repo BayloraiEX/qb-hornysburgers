@@ -1,6 +1,6 @@
 # QB-HORNYSBURGERS
  Join the Discord for support or questions!
- DISCORD https://discord.gg/tbDe9Zjc4e
+ DISCORD https://discord.gg/hya9t8XfH8
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Simple and eazy setup!
  Drag qb-hornysburgers into your resource folder and ensure qb-hornysburgers
