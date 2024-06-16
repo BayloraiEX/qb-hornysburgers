@@ -69,7 +69,7 @@ Config.Zones = {
     [9] = { coords = vector3(1250.01, -355.46, 69.08), radius = 0.9, icon = "fa-solid fa-beer-mug-empty", event = "qb-hornysburgers:client:packageStation", label = "Package Items", job = "hornysburger" }, -- Package Zone
     [10] = { coords = vector3(1248.91, -352.24, 69.08), radius = 1.0, icon = "fa-solid fa-square-up-right", event = "qb-hornysburgers:client:jobFridge1", label = "Fridge", job = "hornysburger" }, -- Fridge
     [11] = { coords = vector3(1251.97, -356.54, 69.08), radius = 1.0, icon = "fa-solid fa-square-up-right", event = "qb-hornysburgers:client:jobHeater1", label = "Heater", job = "hornysburger" }, -- Heater
-    [12] = { coords = vector3(1243.51, -350.27, 69.67), radius = 0.6, icon = "fa-solid fa-clock", event = "qb-hornysburgers:clientToggleDuty", label = "Clock In/Out", job = "hornysburger" }, -- On/Off Duty
+    [12] = { coords = vector3(1243.51, -350.27, 69.67), radius = 0.6, icon = "fa-solid fa-clock", event = "qb-hornysburgers:client:ToggleDuty", label = "Clock In/Out", job = "hornysburger" }, -- On/Off Duty
     [13] = { coords = vector3(1248.27, -358.23, 69.08), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "qb-hornysburgers:bill", label = "Bill Customer", job = "hornysburger" }, -- Cash Register #1
     [14] = { coords = vector3(1250.81, -359.22, 69.08), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "qb-hornysburgers:bill", label = "Bill Customer", job = "hornysburger" }, -- Cash Register #2
     [15] = { coords = vector3(1249.39, -359.01, 69.08), radius = 0.5, icon = "fa-brands fa-cc-visa", event = "qb-hornysburgers:bill", label = "Bill Customer", job = "hornysburger" }, -- Cash Register #3
