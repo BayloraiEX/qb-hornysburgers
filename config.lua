@@ -6,7 +6,7 @@ Config.PedLocation = vector4(1247.27, -350.5, 68.09, 347.83)
 
 Config.VehicleSpawn = vector4(1250.03, -339.83, 69.08, 77.64)
 
-Config.Vehicle = 'baller'
+Config.Vehicle = 'nspeedo'
 
 HungerFill = {
     -- Breakfast
